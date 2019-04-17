@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     @IBAction func pastAction() {
        //Initialize Sting and Array
-        let mainSentence: String = "what did you do "
-        var pastSentence: Array = ["at your birthday 3 years ago?","2 days ago?","3 months ago?","at uni a week ago?","at work 3 days ago?","at home a day ago?"]
+        let mainSentence: String = "What did you do "
+        var pastSentence: Array = ["at your birthday 3 years ago?","2 days ago?","3 Months ago?","at uni a week ago?","at work 3 days ago?","at home a day ago?"]
        //Generate the ramdom index to use to form the snetence
         let pastSentenceIndex: Int = Int(arc4random_uniform(UInt32(pastSentence.count)))
         let chosenPastSentence = pastSentence[pastSentenceIndex]
