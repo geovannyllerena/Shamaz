@@ -18,29 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose from the following options" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSP-JX-WDU">
-                                <rect key="frame" x="20" y="44" width="374" height="237"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose from the following options" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSP-JX-WDU">
+                                <rect key="frame" x="20" y="64" width="374" height="345.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sF-Si-39I">
-                                <rect key="frame" x="257" y="470" width="137" height="37"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <state key="normal" title="Future Plans"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="futurePlans" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pyi-Nf-pLQ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2o-E0-iiv">
-                                <rect key="frame" x="121" y="795" width="173" height="47"/>
+                                <rect key="frame" x="120.5" y="795" width="173" height="47"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <state key="normal" title="Who's Next?">
                                     <color key="titleColor" red="0.3382430374622345" green="0.059274934232234955" blue="0.87366455793380737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,9 +34,8 @@
                                     <action selector="nextPlayer" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHh-oh-VAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-Ti-fnj">
-                                <rect key="frame" x="20" y="470" width="139" height="35"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-Ti-fnj">
+                                <rect key="frame" x="20" y="430.5" width="139" height="35"/>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.83418720960000003" yellow="0.78087770940000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="23"/>
                                 <state key="normal" title="Past Actions">
@@ -66,14 +50,37 @@
                                     <action selector="pastAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFX-fp-dfB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sF-Si-39I">
+                                <rect key="frame" x="277" y="429.5" width="117" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="U9C-OB-YdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <state key="normal" title="Future Plans"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="futurePlans" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pyi-Nf-pLQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.73661404848098755" green="0.99123126268386841" blue="0.67838245630264282" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="s2o-E0-iiv" firstAttribute="top" secondItem="8sF-Si-39I" secondAttribute="bottom" constant="303" id="EX7-ah-a8q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JSP-JX-WDU" secondAttribute="trailing" constant="20" id="0nv-9W-hYh"/>
+                            <constraint firstItem="DHa-Ti-fnj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7b1-kd-JaU"/>
+                            <constraint firstItem="DHa-Ti-fnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E5R-5k-27s"/>
+                            <constraint firstItem="JSP-JX-WDU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P8f-M6-YsH"/>
                             <constraint firstItem="s2o-E0-iiv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="Q9W-uD-4iz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2o-E0-iiv" secondAttribute="trailing" constant="120" id="boT-Jp-UaM"/>
+                            <constraint firstItem="8sF-Si-39I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TyO-QT-tmQ"/>
+                            <constraint firstItem="JSP-JX-WDU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lKB-MT-Z9Z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8sF-Si-39I" secondAttribute="trailing" constant="20" id="lhe-vi-QMw"/>
-                            <constraint firstItem="s2o-E0-iiv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="ysc-Tg-62s"/>
+                            <constraint firstItem="8sF-Si-39I" firstAttribute="top" secondItem="JSP-JX-WDU" secondAttribute="bottom" constant="20" id="mYU-A8-1NY"/>
+                            <constraint firstItem="8sF-Si-39I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DHa-Ti-fnj" secondAttribute="trailing" constant="8" symbolic="YES" id="nWo-QP-ovc"/>
+                            <constraint firstItem="s2o-E0-iiv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="svJ-GI-Okh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
